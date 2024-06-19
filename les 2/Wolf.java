@@ -1,23 +1,36 @@
 public class Wolf{
-    String gender;
+    private String gender;
     String nickname;
     int weight;
     int age;
     String color;
 
-    void walk(){
+    public void walk(){
         System.out.println(nickname+" идет");
     }
-    void sit(){
+    public void sit(){
         System.out.println(nickname+" сидит");
     }
-    void run(){
+    public void run(){
         System.out.println(nickname+" бежит");
     }
-    void howl(){
+    public void howl(){
         System.out.println(nickname+" воет");
     }
-    void hunt(){
+    public void hunt(){
         System.out.println(nickname+" охотится");
     }
+
+    public void setAge(int age){
+        if (age>8){
+            this.age=age;
+        }
+        else{
+            System.out.println("Eror/age");
+        }
+    }
+    public int getAge(){
+        return age;
+    }
 }
+
