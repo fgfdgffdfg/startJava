@@ -1,3 +1,5 @@
+package com.startjava.les2;
+
 public class Wolf{
     private String gender;
     private String nickname;
